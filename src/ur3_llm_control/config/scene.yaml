@@ -1,0 +1,18 @@
+frame: world
+robot: ur3e
+cube_size: 0.04
+table:
+  center: [0.32, 0.0, 0.05]
+  size: [0.46, 0.72, 0.10]
+objects:
+  red_cube: [0.26, -0.20, 0.12]
+  yellow_cube: [0.26, 0.0, 0.12]
+  blue_cube: [0.26, 0.20, 0.12]
+zones:
+  zone_a: [0.40, -0.20, 0.12]
+  zone_b: [0.40, 0.0, 0.12]
+  zone_c: [0.40, 0.20, 0.12]
+zone_tolerance: 0.035
+tool_offset: 0.08
+approach_height: 0.10
+home: [0.0, -1.57, 0.0, -1.57, 0.0, 0.0]

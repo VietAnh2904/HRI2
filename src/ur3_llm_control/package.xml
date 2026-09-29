@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>ur3_llm_control</name><version>0.1.0</version>
+  <description>UR3e skill-based LLM planning with validated Gazebo execution.</description>
+  <maintainer email="student@example.invalid">Student</maintainer><license>MIT</license>
+  <buildtool_depend>ament_cmake</buildtool_depend><buildtool_depend>ament_cmake_python</buildtool_depend>
+  <depend>gazebo_ros</depend><depend>gazebo_dev</depend><depend>rclcpp</depend><depend>std_srvs</depend>
+  <exec_depend>rclpy</exec_depend><exec_depend>moveit_msgs</exec_depend><exec_depend>gazebo_msgs</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend><exec_depend>shape_msgs</exec_depend><exec_depend>std_msgs</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend><exec_depend>tf2_ros</exec_depend><exec_depend>python3-yaml</exec_depend>
+  <exec_depend>ur_description</exec_depend><exec_depend>ur_moveit_config</exec_depend>
+  <exec_depend>gazebo_ros2_control</exec_depend><exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>joint_state_broadcaster</exec_depend><exec_depend>joint_trajectory_controller</exec_depend>
+  <exec_depend>launch_ros</exec_depend><exec_depend>xacro</exec_depend>
+  <export><build_type>ament_cmake</build_type><gazebo_ros plugin_path="lib"/></export>
+</package>
