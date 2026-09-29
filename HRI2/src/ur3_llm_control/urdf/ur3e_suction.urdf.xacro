@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://wiki.ros.org/xacro" name="ur">
+  <xacro:include filename="$(find ur_description)/urdf/ur.urdf.xacro"/>
+  <link name="suction_tip">
+    <inertial><mass value="0.02"/><inertia ixx="0.00001" iyy="0.00001" izz="0.00001" ixy="0" ixz="0" iyz="0"/></inertial>
+    <visual><geometry><cylinder radius="0.012" length="0.01"/></geometry><material name="cup"><color rgba="0.15 0.18 0.20 1"/></material></visual>
+    <collision><geometry><cylinder radius="0.012" length="0.01"/></geometry></collision>
+  </link>
+  <!-- tool0 and wrist_3_link coincide; using the inertial wrist link prevents
+       Gazebo's URDF converter from dropping the cup under massless tool frames. -->
+  <joint name="suction_fixed" type="fixed"><parent link="wrist_3_link"/><child link="suction_tip"/><origin xyz="0 0 0.08"/></joint>
+  <gazebo reference="suction_fixed"><preserveFixedJoint>true</preserveFixedJoint></gazebo>
+  <gazebo><plugin name="skill_grasp" filename="libskill_grasp.so"><ros><namespace>/grasp</namespace></ros></plugin></gazebo>
+</robot>

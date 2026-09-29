@@ -1,0 +1,3 @@
+#!/usr/bin/env python3
+from ur3_llm_control.skill_executor import main
+main()
