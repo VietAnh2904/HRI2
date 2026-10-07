@@ -17,7 +17,7 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='Le Trong Nghia',
+    maintainer='Pham Viet Anh',
     maintainer_email='student@example.com',
     description='LLM-planned, MoveIt-executed pick & place for UR3/UR3e',
     license='MIT',
