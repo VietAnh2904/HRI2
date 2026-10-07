@@ -8,7 +8,7 @@
     orders whitelisted robot skills, a validator checks the plan, and every motion is
     planned and executed by MoveIt 2 in Gazebo Classic.
   </description>
-  <maintainer email="student@example.com">Le Trong Nghia</maintainer>
+  <maintainer email="student@example.com">Pham Viet Anh</maintainer>
   <license>MIT</license>
 
   <buildtool_depend>ament_python</buildtool_depend>
